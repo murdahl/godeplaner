@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gode Planer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-900 font-sans">
-  <div class="min-h-screen flex flex-col items-center justify-center p-6">
-    <header class="mb-10 text-center">
-      <h1 class="text-4xl font-bold tracking-tight">Gode Planer</h1>
-      <p class="text-lg mt-2 text-gray-600">En liste over våre beste intensjoner</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>🦄 Gode Planer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #84fab0, #8fd3f4);
+        background-size: 300% 300%;
+        animation: rainbow 15s ease infinite;
+      }
+      @keyframes rainbow {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+      }
+    </style>
+  </head>
+  <body class="text-white font-sans">
+    <div class="min-h-screen flex flex-col items-center justify-center p-6 text-center">
+      <header class="mb-8">
+        <h1 class="text-5xl font-extrabold drop-shadow-lg">🦄 Gode Planer</h1>
+        <p class="text-xl mt-2 text-white/80">Alt det fine vi har lyst til å gjøre</p>
+      </header>
 
-    <main class="w-full max-w-xl bg-white shadow-xl rounded-l p-6 space-y-4">
-      <ul class="list-disc list-inside space-y-2 text-lg">
-        <li>Gå på butikken</li>
-        <li>Sende blomster til mamma</li>
-        <li>Spise sunt (mandag til onsdag... kanskje)</li>
-        <li>Melde seg som blodgiver</li>
-        <li>Trene jevnlig (en gang er bedre enn null)</li>
-        <li>DDoS’e <a href="https://www.ondeplaner.no">ondeplaner.no</a> (for godhetens skyld)</li>
-        <li>Starte på den romanen jeg alltid har snakket om</li>
-        <li>Gi komplimenter til fremmede</li>
-      </ul>
-    </main>
+      <main class="w-full max-w-2xl bg-white/20 backdrop-blur-lg rounded-2xl p-8 shadow-2xl space-y-4 text-white">
+        <ul class="list-disc list-inside text-left text-lg space-y-2">
+          <li>🌼 Gå på butikken</li>
+          <li>🌸 Sende blomster til mamma</li>
+          <li>🥦 Spise sunt (mandag til onsdag... kanskje)</li>
+          <li>🩸 Melde seg som blodgiver</li>
+          <li>🏃‍♂️ Trene jevnlig (én gang teller!)</li>
+          <li>📖 Starte på romanen man har utsatt i årevis</li>
+          <li>🧠 DDoS'e ondeplaner.no (med kjærlighet)</li>
+          <li>😊 Gi komplimenter til fremmede</li>
+        </ul>
+      </main>
 
-    <footer class="mt-16 text-sm text-gray-500 text-center">
-      © 2025 godeplaner.no. All godhet forbeholdt.
-      Internettets gode samaritan.
-    </footer>
-  </div>
-</body>
+      <footer class="mt-12 text-sm text-white/60">
+        © 2025 godeplaner.no – Laget med ❤️ og 🦄
+        Internettets gode samaritan.
+      </footer>
+    </div>
+  </body>
 </html>
